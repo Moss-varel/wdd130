@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Jeansty Varel | WDD 130</title>
-        <link rel="stylesheet" href="styles/styles.css">
-    </head>
-    <body>
-        <header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeansty Varel's BUY-Idayo WDD 130 course homepage.">
+    <meta name="author" content="Jeansty Varel">
+    <title>Jeansty Varel | WDD 130</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
         <nav>
             <a href="#">Home</a>
-            <a href="wwr">Rafting Website</a>
+            <a href="wwr/index.html">White Water Rafting Website</a>
+            <a href="wwr/site_plan_rafting.html">Site Plan</a>
         </nav>
     </header>
-   
-        <main>
-            <h1>Jeansty Varel | WDD 130</h1>
-            <img src="images/profile.jpg" alt="Hello, my name is Jeansty Varel" width="200">
-            <p>Hello! My name is Jeansty Varel and I am from Pointe-Noire, Congo. I love this course.</p>
-        </main>
+    <main>
+        <h1>Jeansty Varel | WDD 130</h1>
+        <img src="images/profile.jpg" alt="Profile picture of Jeansty Varel" width="200">
+        <p>Hello! My name is Jeansty Varel, and I am from Pointe-Noire, Congo. I am passionate about web design and development, and I am excited to explore more through this course.</p>
+    </main>
+    <aside>
+        <h2>Congo-Brazzaville</h2>
+        <img src="images/congo.jpg" alt="Congo-Brazzaville landscape">
+        <p>"La République du Congo, également appelée Congo-Brazzaville, est un pays d'Afrique centrale doté de réserves de forêts tropicales abritant des gorilles. Sa capitale, Brazzaville, fait face à Kinshasa, la capitale de la République démocratique du Congo, de l'autre côté du fleuve Congo." — <a href="https://fr.wikipedia.org/wiki/République_du_Congo" target="_blank">wiki</a></p>
+    </aside>
     <footer>
-        <p>©️2025 🌴 Jeansty Varel 🌴 Pointe-Noire, Congo</p>
+        <p>©️ <span id="year"></span> 🌴 Jeansty Varel 🌴 Pointe-Noire, Congo</p>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </footer>
-    </body>
+</body>
 </html>
