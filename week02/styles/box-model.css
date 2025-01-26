@@ -28,3 +28,38 @@ cite {
     font-size: smaller;
 
 }
+
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;  
+}
+
+
+aside {
+  
+}
+
+aside img {
+    float: right;
+    margin: 0 0 10px 15px;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: #bbb;
+    width: 100px;
+    height: auto;
+}
+
+p {
+    margin: 0; 
+    padding: 0; 
+}
+
+
+main p {
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 10px; 
+}
