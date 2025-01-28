@@ -55,13 +55,8 @@ main {
     height: auto;
   }
   
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  
   p {
-    padding: 0;
+    padding: 0px;
   }
   
   footer {
