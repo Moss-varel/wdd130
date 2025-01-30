@@ -1,137 +1,117 @@
-/* Define Global Colors */
-:root {
-    --primary-color: #0d1b2a; 
-    --highlight-color: #1b263b; 
-    --text-color: #415a77; 
-    --background-color: #778da9;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body and Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-}
-
-/* Header */
-header {
-    background-color: var(--primary-color);
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
     padding: 20px;
-    text-align: center;
 }
 
-header img {
-    max-width: 200px;
+header {
+    background-color: #dcd6f7;
+    padding: 15px;
+    
 }
 
-/* Navigation */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
     margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+    color: #333;
+    font-weight: bold;
 }
 
-/* Hero Section */
 .hero {
-    position: relative;
     text-align: center;
-    color: white;
+    background-color: #e4c1f9;
+    padding: 30px;
+    margin: 20px 0;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    max-height: 250px;
+    object-fit: cover;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 48px;
-    font-family: 'Merriweather', serif;
+    font-size: 32px;
+    margin: 10px 0;
 }
 
-/* Article Section */
-article {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white;
+.history {
+    background-color: #f3e9e9;
     padding: 20px;
     margin: 20px 0;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
-article img {
-    float: right;
-    margin-left: 20px;
-    width: 150px;
+.history-content {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.history img {
+    max-width: 200px;
     height: auto;
-    border-radius: 50%;
 }
 
-/* Sections */
-section {
-    padding: 20px;
-    margin: 20px;
-}
-
-section h2 {
-    font-size: 28px;
-    font-family: 'Merriweather', serif;
-    color: var(--primary-color);
-}
-
-/* Social Links */
-.sociallinks a {
-    margin-right: 10px;
-}
-
-.sociallinks img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Remove Underlines from Social Media Image Links */
-.sociallinks a {
-    text-decoration: none;
-}
-
-/* Footer */
-footer {
+.adventure {
     text-align: center;
     padding: 20px;
-    background-color: var(--primary-color);
-    color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 32px;
-    }
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
 
-    article {
-        max-width: 90%;
-    }
+.adventure-gallery figure {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
 
-    section img {
-        width: 100%;
-        height: auto;
-    }
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+figcaption {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+footer {
+    background-color: #dcd6f7;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
 }

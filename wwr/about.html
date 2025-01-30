@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                <title>About Us - White Water Rafting</title>
-            
-        <!-- Meta Description for SEO -->
-        <meta name="description" content="Learn about White Water Rafting's mission, history, and adventures. Discover why our rafting company is the best choice for thrilling river excursions.">
-            
-         <!-- Meta Author -->
-         <meta name="author" content="Jeansty Varel">
-            
-         <!-- Google Fonts -->
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-            
-        <!-- Link to CSS -->
-        <link rel="stylesheet" href="styles/rafting.css">
-        </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Learn about White Water Rafting's mission, history, and adventures. Discover why our rafting company is the best choice for thrilling river excursions.">
+    <meta name="author" content="Jeansty Varel">
+
+    <title>About Us - White Water Rafting</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
 <body>
 
     <!-- HEADER SECTION -->
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
-        <div class="hero">
-            <img src="images/hero.png" alt="Rafting Adventure">
+        <section class="hero">
             <h1>White Water Rafting</h1>
             <article>
-                <h2><img src="images/happy-client.jpg" alt="Happy Client"></h2>
+                <img src="images/happy-client.jpg" alt="Happy Client">
                 <p>Experience the thrill of rafting on the wildest rivers with our expert guides!</p>
             </article>
-        </div>
-
-        <section>
-            <h2>History</h2>
-            <p>Our company was founded with a passion for adventure and the great outdoors...</p>
         </section>
 
-        <section>
+        <section class="history">
+            <h2>History</h2>
+            <div class="history-content">
+                <p>Our company was founded with a passion for adventure and the great outdoors...</p>
+                <img src="images/hero.png" alt="History Image">
+                <p>We have guided countless enthusiasts through unforgettable experiences.</p>
+            </div>
+        </section>
+
+        <section class="adventure">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/raf1.jpg" alt="Rafting Action">
-            <img src="images/raf2.jpg" alt="Exciting Rapids">
-            <img src="images/raf3.jpg" alt="Group on the River">
-            <img src="images/raf4.jpg" alt="Whitewater Fun">
-            <img src="images/raf5.jpg" alt="Paddle Together">
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/raf1.jpg" alt="Adventure 1">
+                    <figcaption>Caption 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raf2.jpg" alt="Adventure 2">
+                    <figcaption>Caption 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raf3.jpg" alt="Adventure 3">
+                    <figcaption>Caption 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raf4.jpg" alt="Adventure 4">
+                    <figcaption>Caption 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raf5.jpg" alt="Adventure 4">
+                    <figcaption>Caption 4</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
     <!-- FOOTER SECTION -->
     <footer>
         <p>&copy; 2025 White Water Rafting | Jeansty Varel</p>
-        <nav class="sociallinks">
+        <nav class="social-links">
             <a href="https://facebook.com">
                 <img src="images/facebook.webp" alt="Facebook">
             </a>
@@ -76,6 +95,5 @@
             </a>
         </nav>
     </footer>
-
 </body>
 </html>
