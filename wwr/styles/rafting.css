@@ -115,3 +115,132 @@ footer .social-links img {
     height: 30px;
     margin: 5px;
 }
+
+
+/* Contact Page Styles */
+.contact-info {
+    text-align: center;
+    background-color: #e4c1f9;
+    padding: 50px;
+    margin: 20px 0;
+}
+
+.company-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    background-color: #f3e9e9;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.team-gallery figure {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #dcd6f7;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #bbaae0;
+}
+
+.employee-gallery img {
+    width: 90%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.employee-gallery figure {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.employee-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
