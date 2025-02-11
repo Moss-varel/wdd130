@@ -49,7 +49,7 @@
                     ✉️ contact@wwrafting.com
                 </address>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d254015.10448128788!2d15.156750641114375!3d-4.081497682804422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scg!4v1739289404796!5m2!1sfr!2scg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d254015.10448128788!2d15.156750641114375!3d-4.081497682804422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scg!4v1739289404796!5m2!1sfr!2scg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
 
@@ -83,40 +83,41 @@
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-
+            
                     <div class="form-group">
                         <fieldset>
                             <legend>Message Purpose:</legend>
-                            <label>
-                                <input type="radio" name="purpose" value="general" required>
+                            <label for="purpose-general">
+                                <input type="radio" id="purpose-general" name="purpose" value="general" required>
                                 General Inquiry
                             </label>
-                            <label>
-                                <input type="radio" name="purpose" value="reservation">
+                            <label for="purpose-reservation">
+                                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
                                 Reservation Question
                             </label>
-                            <label>
-                                <input type="radio" name="purpose" value="suggestion">
+                            <label for="purpose-suggestion">
+                                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
                                 Website Suggestion
                             </label>
                         </fieldset>
                     </div>
-
+            
                     <div class="form-group">
                         <label for="message">Your Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-
+            
                     <div class="form-group">
-                        <label class="newsletter">
-                            <input type="checkbox" name="newsletter">
+                        <label for="newsletter" class="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
                             Subscribe to monthly newsletter
                         </label>
                     </div>
-
+            
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </section>
+            
         </div>
     </main>
 
