@@ -10,21 +10,26 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
     background-color: #dcd6f7;
+    color: white;
     padding: 15px;
+    text-align: center;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px
 }
 
 nav ul {
@@ -39,6 +44,22 @@ nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+    color: green;
 }
 
 .about-rafting img {
@@ -305,22 +326,33 @@ footer .social-links img {
     gap: 20px;
     padding: 30px;
 }
-
-.trip-list article {
-    background: #fff;
-    padding: 10px;
+.trip h2{
+    display: grid;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.trip-list article:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .trip-list img {
-    width: 60%;
-    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .trip-table {
     text-align: center;
     padding: 20px;
+}
+
+.trip-list article {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 table {
