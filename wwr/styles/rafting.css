@@ -295,10 +295,10 @@ footer .social-links img {
 }
 
 .grid-layout {
-    display: grid;
+    display: flex;
     grid-template-columns:repeat(2, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
+    grid-gap: 50px;
+    padding: 30px;
 }
 
 .newsletter {
